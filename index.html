@@ -7,16 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goorac News</title>
+    <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+        </script>
 </head>
 <body>
     <center>
-        <p style="margin-top: 59%;font-size: 24px;"><b>Goorac </b>News</p>
+        <div id="Page1">
+            <p style="margin-top: 59%;font-size: 24px;"><b>Goorac </b>News</p>
+          </div>
+          <div id="Page2" style="display:none">
+           <iframe src="src/pages/main/worldNews.html" style="margin: 0;border: 0;width: 100%;height: 100vh;"></iframe>
+          </div>
     </center>
 </body>
 <script>
     onload=function() {
         setTimeout(function(){ 
-            location.href = "src/pages/main/worldNews.html"
+            document.getElementById("Page1").fadeOut("slow")
+            show('Page2','Page1');
          }, 3000);
     }
 </script>
