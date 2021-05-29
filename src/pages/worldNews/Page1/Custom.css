@@ -1,0 +1,22 @@
+body{
+    background-color:black;
+    color: rgb(218, 185, 142);
+}
+.goorac{
+    border: 0.1px solid rgb(49, 36, 36) ;
+   border-radius: 15px;
+    background-color:rgb(31, 27, 24) ;
+    width: 95%;
+    margin-top: 10px;
+}
+.gh{
+    font-size: 18px;
+    margin-left: 8px;
+    margin-top: 4px;
+    text-align: left;
+    color: aliceblue;
+}
+.dg{
+    text-align: left;
+    margin-left: 5px;
+}
