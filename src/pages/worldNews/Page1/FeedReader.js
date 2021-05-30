@@ -14,7 +14,7 @@ userFeedURLs.forEach(userUrl => {
                 var content = document.getElementById('content');
 
                 var newItem = "";
-                newItem += "<div class=\"goorac\" id=\"item\"><a href=\"" + item.link + "\"><p class=\"gh\" >" + item.title + "</p></a>";
+                newItem += "<div class=\"goorac\" id=\"item\"><a target=\"_blank\" href=\"" + item.link + "\"><p class=\"gh\" >" + item.title + "</p></a>";
                 if (item.author != "")
                   
                 newItem += "<h4>Published Date: " + item.pubDate + "</h4>";
