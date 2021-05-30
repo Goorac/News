@@ -1,6 +1,9 @@
 let API = "https://api.rss2json.com/v1/api.json?rss_url=";
 let userFeedURLs = [ 
-  "https://timesofindia.indiatimes.com/rssfeedstopstories.cms?x=1"
+  "https://timesofindia.indiatimes.com/rssfeedstopstories.cms?x=1",
+  "http://feeds.feedburner.com/NDTV-LatestNews",
+  "https://www.indiatoday.in/rss/1206578",
+  "http://www.news18.com/rss/india.xml"
 ];
 userFeedURLs.forEach(userUrl => {
     $.ajax({
