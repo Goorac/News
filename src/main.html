@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base target="_self">
     <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Goorac News</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="res/style/style.css">
 </head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<link href="res/style/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
+    <div class="navbar">
+        <i onclick="openNav()" style="font-size:20px;margin-top:10px;margin-left: 10px;" class="fa">&#xf0c9;</i>
+        <p class="logo"><b>Goorac </b>News</p> <p class="type" >Home</p>
+      </div>
     <center>
-        <div class="menuBar">
-            <i onclick="openNav()" style="font-size:20px;margin-top:15px;margin-left: 10px;" class="fa">&#xf0c9;</i>
-     <p class="logo"><b>Goorac </b>News</p> <p class="type" >World</p>
-        </div>
-        <iframe width="100%" style="height: 100vh;margin: 0;border: 0;" src="../worldNews/Page1/main.html"></iframe>
-    </center>
-    
+        <div class="main">
+<p id="content"></p>
+<p>Loading...</p>
+</div>
+  
 <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
+    <a  class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://news.goorac.tk">Home</a>
+    <a href="https://news.goorac.tk/src/pages/worldNews/Page1/main.html">World News</a>
+    <a href="pages/indianNews/main.html">Indian News</a>
     <a href="#">Contact</a>
   </div>
   
   <script>
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("content").style.marginLeft = "250px";
   }
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("content").style.marginLeft= "0";
   }
   </script>
+  <script src="res/js/main.js" ></script>
+</center>
 </body>
 </html>
