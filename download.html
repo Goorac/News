@@ -1,0 +1,48 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goorac Download</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body id="body" style="opacity: 0;">
+        <div style="background-color: rgb(129, 75, 180);height: 60px;width: 50%;margin-left: 50%;border-top-left-radius: 100px;">
+
+        </div>
+        <h4 style="position: relative;margin-left: 20px;margin-top: -30px;color: rgb(59, 59, 52);" >Goorac News</h4><b></b>
+        <center>
+        <img src="https://cdn.dribbble.com/users/2475489/screenshots/10958341/android.gif" style="border-radius:;width: 300px;height: auto;" >
+      <div style="background-color: rgb(129, 75, 180);height: 55%;width: 100%;border-top-right-radius: 500px;">  
+        <p style="margin-top: 10px;text-align: center;" ><b> Latest version</b></p>
+        <label style="font-size: 18px;color: beige;" >Android App</label>
+        <a href="src/res/androidApp/Goorac News_1_1.0.apk">
+            <button class="btn btn-primary" style="margin-left: 20px;">Download</button>
+        </a>
+        </div>
+    </center>
+</body>
+<script type="text/javascript">
+    var opacity = 0;
+    var intervalID = 0;
+    window.onload = fadeIn;
+
+    function fadeIn() {
+        setInterval(show, 200);
+    }
+
+    function show() {
+        var body = document.getElementById("body");
+        opacity = Number(window.getComputedStyle(body)
+                         .getPropertyValue("opacity"));
+        if (opacity < 1) {
+            opacity = opacity + 0.1;
+            body.style.opacity = opacity
+        } else {
+            clearInterval(intervalID);
+        }
+    }
+</script>
+    </style>
+</html>
