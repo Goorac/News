@@ -34,3 +34,7 @@ userFeedURLs.forEach(userUrl => {
         }
     });
 });
+
+function head() {
+    document.getElementById()
+}
