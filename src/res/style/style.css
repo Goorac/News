@@ -95,3 +95,7 @@ body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+img{
+  width: 20px;
+  height: 0;
+}
