@@ -1,9 +1,12 @@
 let API = "https://api.rss2json.com/v1/api.json?rss_url=";
 let userFeedURLs = [ 
-"http://www.sportingnews.com/us/rss",
-"https://www.skysports.com/rss/12040",
-"https://www.sbnation.com/rss",
-"http://feeds.bbci.co.uk/sport/rss.xml"
+"https://www.techmeme.com/feed.xml?x=1",
+"https://feeds.feedburner.com/TechCrunch/",
+"https://www.technologyreview.com/topnews.rss",
+"http://feeds.arstechnica.com/arstechnica/technology-lab",
+"https://readwrite.com/feed/?x=1",
+"http://feeds.bbci.co.uk/news/technology/rss.xml",
+"https://www.cnet.com/rss/news/"
 ];
 userFeedURLs.forEach(userUrl => {
     $.ajax({
