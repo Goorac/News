@@ -18,7 +18,7 @@ userFeedURLs.forEach(userUrl => {
                 newItem += "<div class=\"goorac\" id=\"item\"><a target=\"_blank\" href=\"" + item.link + "\"><p class=\"gh\" >" + item.title + "</p></a>";
                 if (item.author != "")
                   
-                newItem += "<h4 style='font-size:0px' >Published Date: " + item.pubDate + "</h4>";
+                newItem += "<h4 >Published Date: " + item.pubDate + "</h4>";
 
                 newItem += "<p class='dg'>" + item.description + "</p><hr></div>";
 
