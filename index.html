@@ -45,16 +45,6 @@
          }, 3000);
          hh()
     }
-    function hh() {	
-	var lF = document.getElementById('hh').contentWindow;
-	if(window.pageYOffset!=undefined){ //opera, firefox,& gecko browsers
-		lF.onscroll = function(){
-            window.scrollTo(0,1);
-}
-document.getElementById('leftIn').value= lF.pageYOffset;
-      var t = lF.pageYOffset;
-      document.getElementById("rtr").style.marginTop =  -t;
-    } }
 </script>
 <style>
     body{
