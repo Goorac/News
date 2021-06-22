@@ -15,21 +15,21 @@
 <script src="FeedReader.js"></script>
 <link href="../style/Custom.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<body>
+<body onload="g()" >
     <div class="navbar">
         <i onclick="openNav()" style="font-size:20px;margin-top:10px;margin-left: 10px;" class="fa">&#xf0c9;</i>
         <p class="logo"><b>Goorac </b>News</p> <p class="type" >Indian News</p>
       </div>
     <center>
         <div class="main">
-<p id="content"></p>
+<div id="content"></div>
 <p>Loading...</p>
 </div>
   
 <div id="mySidenav" class="sidenav">
 <p id="d"></p>
   </div>
-  
+
   <script>
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -38,8 +38,18 @@
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+  onload=function(){
+     var g = document.getElementById("content").innerHTML
+     alert(g)
+    }
   </script>
 </center>
 <script src="../navBar/nav.js"></script>
+<style>
+  img{
+    width: 25%;
+    height: auto;
+  }
+</style>
 </body>
 </html>
